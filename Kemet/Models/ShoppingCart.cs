@@ -9,9 +9,9 @@ namespace Kemet.Models
         public int CartId { get; set; }
         public int Quantity { get; set; }
         public double Totalprice { get; set; }
-        [ForeignKey("User")]
-        public int UserId { get; set; }
-        public User User { get; set; }
+        //[ForeignKey("User")]
+       // public int Id { get; set; }
+        //public User User { get; set; }
         public ICollection<Product> Products { get; set; }
     }
 }
